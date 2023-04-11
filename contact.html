@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <template data-include="head.html">
+            <link rel="stylesheet" data-var="critical" href="css/contact.css" slot="M4_PAGE_CSS">
+            <title data-var="title" slot="M4_TITLE">Awesome Soft | Contact</title>
+        </template>
+    </head>
+<body>
+    <include src="navbar.html"></include>
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h">Contact Us</h1>
+            <picture>
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/landing-m.jpg" alt="" width="400" height="662">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    FORM                      -->
+        <!-- ============================================ -->
+
+        <section id="form">
+            <div class="left-section">
+                <h2 class="title">Send a Message</h2>
+                <p>If you have any questions or concerns please feel free to reach out to us.  We respond to every call and email.</p>
+                <form id="contact" name="Contact Form2" method="post" data-netlify="true">
+                        <div class="inpuroup">
+                            <label for="name">Full Name</label>
+                            <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" tabindex="1" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group">
+                            <label for="location">Location</label>
+                            <input id="location" aria-label="location" class="input1 right" name="location" placeholder="Your Location" type="text" tabindex="4" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group">
+                            <label for="how">How did you hear about us</label>
+                            <input id="how" aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group textarea">
+                            <label for="message">Message</label>
+                            <textarea id="message" aria-label="write your message" name="message" placeholder="Tell us about what you need help with" tabindex="6" required></textarea>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                    <p class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">Submit</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="info-group">
+                    <span class="heading">Location</span>
+                    <span class="info">Sanctuary City, CA</span>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Phone</span>
+                    <a class="info" href="tel:650-389-2376">(6XX) 3XX-2555</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Email</span>
+                    <a class="info" href="mailto:info@stensal.com">Click to Email</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Hours</span>
+                    <span class="info last">Mon to Fri: 9am to 5pm</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<include src="footer.html"></include>
+<include src="script.html"></include>
+</body>
+</html>

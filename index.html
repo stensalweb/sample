@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <template data-include="head.html">
+            <link rel="canonical" href="https://www.company.com" slot="M4_PATHINFO">
+            <link rel="stylesheet" data-var="critical" href="css/critical.css" slot="M4_CRITICAL">
+            <link rel="stylesheet" data-var="page_css" href="css/local.css" slot="M4_PAGE_CSS">
+            <title data-var="title" slot="M4_TITLE">Awesome Soft | Enabling Remote Work</title>
+        </template>
+    </head>
+<body>
+<include src="navbar.html"></include>
+    <main id="main">
+        <section id="hero">
+            <div class="hero-content">
+                <div class="heroText">
+                    <h1 id="home-h">Awesome Software Projects<br>Anyone Can Build</h1>
+                    <p>Programming Recreationally</p>
+                    <p>No Prerequisites</p>
+                    <a class="button-solid" href="/signin" target="_blank" rel="noopener">
+                        Start Now
+                    </a>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width: 601px)" srcset="images/landing-m.jpg">
+                <img aria-hidden="true" decoding="async" src="images/landing-m.jpg" alt="banner" width="275" height="132">
+             </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Steps                       -->
+        <!-- ============================================ -->
+
+        <section id="services" class="services">
+            <!-- Get Icons From flaticon.com -->
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" src="images/one_web_page.jpg" alt="one web page" width="48" height="48">
+                </picture>
+                <h2>Single Page</h2>
+                <p>Follow The Guide to Code Your Landing Page.</p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" src="images/multiple_web_pages.png" alt="multiple web pages" width="48" height="48">
+                </picture>
+                <h2>Multiple Pages</h2>
+                <p>Coming Soon</p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" src="images/cms.png" alt="cms" width="48" height="48">
+                </picture>
+                <h2>Personal CMS</h2>
+                <p>Coming Soon</p>
+            </div>
+        </section>
+
+        <!-- another one -->
+        <section id="sidebyside-reverse">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Guided Projects</h2>
+                    <ul>
+                        <li>Learn Only What You Need to Get Things Done</li>
+                        <li>Iterate and Learn More</li>
+                    </ul>
+                </div>
+                <picture class="image-box">
+                    <img aria-hidden="true" src="images/boy_draw_stencil-s.jpg"
+                         alt="boy draw stencil" width="600" height="400">
+                </picture>
+            </div>
+        </section>
+
+        <!-- one -->
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Durable Skills For Remote Work</h2>
+                    <div style="display: flex; flex-direction: row; justify-content: space-around; margin-bottom: 1em">
+                        <div>
+                            <img aria-hidden="true" src="images/html.png" alt="check mark" width="20" height="20">
+                            <span>HTML</span>
+                        </div>
+                        <div>
+                            <img aria-hidden="true" src="images/css.png" alt="check mark" width="20" height="20">
+                            <span>CSS</span>
+                        </div>
+                        <div>
+                            <img aria-hidden="true" src="images/javascript.png" alt="check mark" width="20" height="20">
+                            <span>JavaScript</span>
+                        </div>
+                        <div>
+                            <img aria-hidden="true" src="images/sql.png" alt="check mark" width="20" height="20">
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Enjoy coding with standard web technologies, and build up durable skills for the remote first future</p>
+                        <p>Your web presence is easy to maintain, customize, and grow with your coding skills by iteration</p>
+                    </div>
+                </div>
+                <picture class="image-box">
+                    <img aria-hidden="true" src="images/remote_work-s.jpg" alt="web technologies" width="600" height="400">
+                </picture>
+            </div>
+       </section>
+    </main>
+
+<include src="footer.html"></include>
+<include src="script.html"></include>
+</body>
+</html>

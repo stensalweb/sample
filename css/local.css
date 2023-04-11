@@ -1,0 +1,259 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #sidebyside {
+    padding: 50px 0;
+  }
+  #sidebyside .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sidebyside .content {
+    order: 2;
+    margin: auto;
+    margin-top: 4.6875em;
+    max-width: 38.1875em;
+  }
+  #sidebyside .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.875em;
+  }
+  #sidebyside .content p {
+    margin-bottom: 1.111111111em;
+  }
+  #sidebyside .content ul {
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  #sidebyside .content ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #sidebyside .content ul li img {
+    margin-right: 0.625em;
+    margin-top: 0.2222222222em;
+  }
+  #sidebyside .content .button-solid {
+    margin-top: 1.785714286em;
+  }
+  #sidebyside .image-box {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 38.1875em;
+    height: 25em;
+    font-size: min(1.4vw, 1em);
+/*
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: var(--primary);
+                opacity: 1;
+                top: 40/16em;
+                left: -40/16em;
+            }
+             */
+;
+/*
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 516/16em;
+                width: 460/16em;
+                background: url("../images/content-circles.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 1;
+                top: -226/16em;
+                right: -109/16em;
+                z-index: -1;
+             }
+             */
+;
+  }
+  #sidebyside .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+  #sidebyside {
+    padding: 6.25em 0;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  #sidebyside {
+    padding: 9.375em 0;
+  }
+  #sidebyside .container {
+    max-width: 86.9375em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #sidebyside .content {
+    margin: 0;
+    width: 60%;
+  }
+  #sidebyside .image-box {
+    margin: 0;
+    margin-right: 10.625em;
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #sidebyside-reverse {
+    padding: 50px 0;
+  }
+  #sidebyside-reverse .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sidebyside-reverse .content {
+    order: 2;
+    margin: auto;
+    margin-top: 4.6875em;
+    max-width: 38.1875em;
+  }
+  #sidebyside-reverse .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.875em;
+  }
+  #sidebyside-reverse .content p {
+    margin-bottom: 1.111111111em;
+  }
+  #sidebyside-reverse .content ul {
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  #sidebyside-reverse .content ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #sidebyside-reverse .content ul li img {
+    margin-right: 0.625em;
+    margin-top: 0.2222222222em;
+  }
+  #sidebyside-reverse .content .button-solid {
+    margin-top: 1.785714286em;
+  }
+  #sidebyside-reverse .image-box {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 38.1875em;
+    height: 25em;
+    font-size: min(1.4vw, 1em);
+/*
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: var(--primary);
+                opacity: 1;
+                top: 40/16em;
+                left: -40/16em;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 516/16em;
+                width: 460/16em;
+                background: url("/images/content-circles.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 1;
+                top: -226/16em;
+                right: -109/16em;
+                z-index: -1;
+             }
+             */
+;
+  }
+  #sidebyside-reverse .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+  #sidebyside-reverse {
+    padding: 6.25em 0;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  #sidebyside-reverse {
+    padding: 9.375em 0;
+  }
+  #sidebyside-reverse .container {
+    max-width: 86.9375em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #sidebyside-reverse .content {
+    margin: 0;
+    width: 60%;
+    order: 1;
+  }
+  #sidebyside-reverse .image-box {
+    margin: 0;
+    margin-left: 10.625em;
+    order: 2;
+/*
+            &:before {
+                left: auto;
+                right: -40/16em;
+            }
+
+            &:after {
+                right: auto;
+                left: -109/16em;
+            }
+             */
+;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=local.less.map */
+
