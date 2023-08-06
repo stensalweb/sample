@@ -15,22 +15,22 @@
     body.dark-mode {
         background-color: var(--dark);
 
-        p, li, h1, h2, h3, h4, h5, h6 {
+        & :is(p, li, h1, h2, h3, h4, h5, h6) {
             color: #fff;
         }
 
         // hide all light classes
-        .light {
+        & .light {
             display: none;
         }
 
         // show all dark classes
-        .dark {
+        & .dark {
             display: block !important;
         }
     }
 
-    .dark {
+    & .dark {
         display: none;
     }
 }
@@ -44,13 +44,13 @@
 
     // Dark Mode Toggle Switch Animation
     body.dark-mode {
-        #dark-mode-toggle {
-            .sun {
+        & #dark-mode-toggle {
+            & .sun {
                 transform: translate(-50%, -50%);
                 opacity: 1;
             }
 
-            .moon {
+            & .moon {
                 transform: translate(-50%, -150%);
                 opacity: 0;
             }
@@ -72,7 +72,7 @@
         padding: 0;
 
         //center image inside button
-        img, svg {
+        & :is(img, svg) {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -83,14 +83,14 @@
             
         }
 
-        .moon {
+        & .moon {
             z-index: 2;
             // Transition properties
             transition: transform .3s, opacity .3s, fill .3s;
             fill: #000; // --> change the color of the moon graphic based ont he background being lighter or darker
         }
 
-        .sun {
+        & .sun {
             z-index: 1;
             // Transition property
             transform: translate(-50%, 100%);
@@ -111,7 +111,7 @@
         margin-left: 30/16em;
         margin-bottom: 0/16em;
 
-        .moon {
+        & .moon {
             fill: #fff;
         }
     }

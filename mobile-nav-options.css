@@ -10,7 +10,7 @@
         z-index: 10000;
         height: auto;
 
-        .background-color-div {
+        & .background-color-div {
             position: absolute;
             top: 0;
             left: 0;
@@ -20,27 +20,27 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
 
-        .container {
+        & .container {
             padding: 13/16em 0;
             width: 96%;
         }
 
         // Logo
-        .logo {
+        & .logo {
             display: inline-block;
             height: 30/16em ;
             width: auto;
 
-            img {
+            & img {
                 width: auto;
                 height: 100%;
             }
 
-            .light {
+            & .light {
                 display: none;
             }
 
-            .dark {
+            & .dark {
                 display: block;
             }
         }
@@ -60,7 +60,7 @@
             transform: translateY(-50%);
             transition: top .3s;
 
-            span {
+            & span {
                 height: 2px;
                 width: 30/16em;
                 background-color: #000;
@@ -106,7 +106,7 @@
 
         // Hamburger Menu Open State
         .hamburger-menu.clicked {
-            span {
+            & span {
                 background-color: transparent;
                 &:before {
                     width: 100%;
@@ -143,10 +143,10 @@
             transition: height .3s, padding-top .3s, top .3s;
 
 
-            ul {
+            & ul {
                 padding: 0;
                 perspective: 700px;
-                li {
+                & li {
                     list-style: none;
                     margin-bottom: 24/16em;
                     text-align: center;
@@ -172,7 +172,7 @@
                     &:nth-of-type(5) {
                         transition-delay: .5s;
                     }
-                    a {
+                    & a {
                         text-decoration: none;
                         text-transform: uppercase;
                         color: #000;
@@ -209,8 +209,8 @@
             padding-top: 20/16em;
             z-index: -100;
 
-            ul {
-                li {
+            & ul {
+                & li {
                     opacity: 1;
                     transform: translateY(0) rotateX(0);
                 }
@@ -235,7 +235,7 @@
         z-index: 10000;
         height: auto;
 
-        .background-color-div {
+        & .background-color-div {
             position: absolute;
             top: 0;
             left: 0;
@@ -245,27 +245,27 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
 
-        .container {
+        & .container {
             padding: 13/16em 0;
             width: 96%;
         }
 
         // Logo
-        .logo {
+        & .logo {
             display: inline-block;
             height: 30/16em ;
             width: auto;
 
-            img {
+            & img {
                 width: auto;
                 height: 100%;
             }
 
-            .light {
+            & .light {
                 display: none;
             }
 
-            .dark {
+            & .dark {
                 display: block;
             }
         }
@@ -285,7 +285,7 @@
             transform: translateY(-50%);
             transition: top .3s;
 
-            span {
+            & span {
                 height: 2px;
                 width: 30/16em;
                 background-color: #000;
@@ -331,7 +331,7 @@
 
         // Hamburger Menu Open State
         .hamburger-menu.clicked {
-            span {
+            & span {
                 background-color: transparent;
                 &:before {
                     width: 100%;
@@ -368,12 +368,12 @@
             transition: width .3s;
 
 
-            ul {
+            & ul {
                 padding: 0;
                 perspective: 700px;
                 padding-right: 20/16em;
                 padding-top: 50/16em;
-                li {
+                & li {
                     list-style: none;
                     margin-bottom: 24/16em;
                     text-align: right;
@@ -399,7 +399,7 @@
                     &:nth-of-type(5) {
                         transition-delay: .5s;
                     }
-                    a {
+                    & a {
                         text-decoration: none;
                         text-transform: uppercase;
                         color: #000;
@@ -435,8 +435,8 @@
             width: 250/16em;
             z-index: -100;
 
-            ul {
-                li {
+            & ul {
+                & li {
                     opacity: 1;
                     transform: translateY(0) rotateX(0);
                 }

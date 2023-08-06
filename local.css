@@ -6,51 +6,51 @@
 @media only screen and (min-width: 0em) {
     #sidebyside {
         padding: 50px 0;
-        .container {
+        & .container {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
 
-        .content {
+        & .content {
             order: 2;
             margin: auto;
             margin-top: 75/16em;
             max-width: 611/16em;
 
-            h2 {
+            & h2 {
                 font-size: 40/16em;
                 margin-bottom: 42/48em;
             }
 
-            p {
+            & p {
                 margin-bottom: 20/18em;
             }
 
-            ul {
+            & ul {
                 padding-left: 20/16em;
                 margin-bottom: 20/16em;
 
-                li {
+                & li {
                     list-style: none;
                     display: flex;
                     justify-content: flex-start;
                     align-items: flex-start;
 
-                    img {
+                    & img {
                         margin-right: 10/16em;
                         margin-top: 4/18em;
                     }
                 }
             }
 
-            .button-solid {
+            & .button-solid {
                 margin-top: 25/14em;
             }
         }
 
-        .image-box {
+        & .image-box {
             display: block;
             position: relative;
             margin: auto;
@@ -90,7 +90,7 @@
              }
              */
 
-            img {
+            & img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -113,19 +113,19 @@
 @media only screen and (min-width: 1300px) {
     #sidebyside {
         padding: 150/16em 0;
-        .container {
+        & .container {
             max-width: 1391/16em;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
         }
 
-        .content {
+        & .content {
             margin: 0;
             width: 60%;
         }
 
-        .image-box {
+        & .image-box {
             margin: 0;
             margin-right: 170/16em;
         }
@@ -140,46 +140,46 @@
 @media only screen and (min-width: 0em) {
     #sidebyside-reverse {
         padding: 50px 0;
-        .container {
+        & .container {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
 
-        .content {
+        & .content {
             order: 2;
             margin: auto;
             margin-top: 75/16em;
             max-width: 611/16em;
 
-            h2 {
+            & h2 {
                 font-size: 40/16em;
                 margin-bottom: 42/48em;
             }
 
-            p {
+            & p {
                 margin-bottom: 20/18em;
             }
 
-            ul {
+            & ul {
                 padding-left: 20/16em;
                 margin-bottom: 20/16em;
 
-                li {
+                & li {
                     list-style: none;
                     display: flex;
                     justify-content: flex-start;
                     align-items: flex-start;
 
-                    img {
+                    & img {
                         margin-right: 10/16em;
                         margin-top: 4/18em;
                     }
                 }
             }
 
-            .button-solid {
+            & .button-solid {
                 margin-top: 25/14em;
             }
         }
@@ -222,7 +222,7 @@
              }
              */
 
-            img {
+            & img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -245,20 +245,20 @@
 @media only screen and (min-width: 1300px) {
     #sidebyside-reverse {
         padding: 150/16em 0;
-        .container {
+        & .container {
             max-width: 1391/16em;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
         }
 
-        .content {
+        & .content {
             margin: 0;
             width: 60%;
             order: 1;
         }
 
-        .image-box {
+        & .image-box {
             margin: 0;
             margin-left: 170/16em;
             order: 2;
@@ -281,7 +281,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #cta {
+        & #cta {
             &:after {
                 display: none;
             }

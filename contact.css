@@ -11,7 +11,7 @@
         position: relative;
         padding-bottom: 36%;
 
-        .top-wave {
+        & .top-wave {
             position: absolute;
             width: 100%;
             top: -2/16em;
@@ -20,7 +20,7 @@
         }
 
 
-        .title {
+        & .title {
             font-weight: 900;
             font-size:~"min(9vw, 2.4em)";
             line-height: 58/48;
@@ -30,14 +30,14 @@
             text-align: left;
         }
 
-        p {
+        & p {
             line-height: 27/18;
             max-width: 500/18em;
             color: #595959;
             margin-bottom: 48/18em;
         }
 
-        .left-section {
+        & .left-section {
             width: 96%;
             margin: auto;
             margin-top: 15%;
@@ -47,22 +47,22 @@
         #contact {
             margin: auto;
             margin-bottom: 100/16em;
-            .input-group {
+            & .input-group {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 30/16em;
 
-                label {
+                & label {
                     font-weight: bold;
                     font-size: 16/16em;
                     margin-bottom: 6/16em;
                 }
 
-                input[type="text"], 
-                input[type="email"], 
-                input[type="tel"], 
-                input[type="url"], 
-                textarea {
+                & input[type="text"], 
+                & input[type="email"], 
+                & input[type="tel"], 
+                & input[type="url"], 
+                & textarea {
                     font-size: 16/16em;
                     height: 67/16em;
                     border: none;
@@ -70,22 +70,22 @@
                     background: transparent;
                 }
 
-                input:focus {
+                & input:focus {
                     border: 1/16em solid var(--primary);
                 }
 
-                textarea {
+                & textarea {
                     min-height: 200/16em;
                     padding-top: 20/16em;
                 }
 
-                ::placeholder {
+                &::placeholder {
                     color: #d4d4d4;
                     font-family: "Roboto", sans-serif;
                 }
             }
 
-            .button-solid {
+            &.button-solid {
                 border: none;
             }
         }
@@ -98,7 +98,7 @@
             margin: auto;
             border-radius: 5/16em;
 
-            .heading {
+            & .heading {
                 color: #fff;
                 font-size: 24/16em;
                 line-height: 1.2em;
@@ -109,7 +109,7 @@
                 margin-bottom: 20/24em;
             }
 
-            .info-group {
+            & .info-group {
                 margin-bottom: 36/16em;
 
                 &:last-of-type {
@@ -117,7 +117,7 @@
                 }
             }
 
-            .info {
+            & .info {
                 font-size: 16/16em;
                 line-height: 28/16;
                 color: #fff;
@@ -133,16 +133,16 @@
 @media only screen and (min-width: 568px) {
 
     #form {
-        #contact {
+        & #contact {
             max-width: 700/16em;
         }
-        .contact-right {
+        & .contact-right {
             max-width: 700/16em;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
 
-            .info-group {
+            & .info-group {
                 width: 40%;
                 margin-left: 50/16em;
                 &:nth-of-type(3) {
@@ -157,13 +157,13 @@
 @media only screen and (min-width: 48em) {
 
     #form {
-        #contact {
+        & #contact {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
             flex-wrap: wrap;
 
-            .input-group {
+            & .input-group {
                 width: 48%;
                 margin-bottom: 50/16em;
                 position: relative;
@@ -177,33 +177,33 @@
                 }
 
                 &:hover {
-                    .hover-box {
+                    & .hover-box {
                         height: 67/16em;
                         border: 1/16em solid var(--primary);
                         pointer-events: none;
                     }
 
-                    input[type="text"], 
+                    & :is(input[type="text"], 
                     input[type="email"], 
                     input[type="tel"], 
                     input[type="url"], 
-                    textarea {
+                    textarea) {
                         padding-left: 20/16em;
                     }
                 }
 
-                input[type="text"], 
+                & :is(input[type="text"], 
                 input[type="email"], 
                 input[type="tel"], 
                 input[type="url"], 
-                textarea {
+                textarea) {
                     border-bottom: none;
                     position: relative;
                     transition: padding .3s;
                     background: transparent;
                 }
 
-                .hover-box {
+                & .hover-box {
                     position: absolute;
                     display: block;
                     height: 1/16em;
@@ -219,15 +219,15 @@
                 }
             }
 
-            .textarea {
+            & .textarea {
                 &:hover {
-                    .hover-box {
+                    & .hover-box {
                         height: 168/16em;
                     }
                 }
             }
             
-            .form-submit {
+            & .form-submit {
                 margin-left: auto;
             }
 
@@ -246,26 +246,26 @@
         width: 100%;
         padding: 150/16em 0;
 
-        .left-section {
+        & .left-section {
             width: 750/16em;
             margin: 0;
             margin-left: 0;
             margin-right: 75/16em;
         }
 
-        #contact {
+        & #contact {
             margin: 0;
             margin-right: 0;
             max-width: none;
         }
 
-        .contact-right {
+        & .contact-right {
             flex-direction: column;
             max-width: 300/16em;
             margin: 0;
             height: 554/16em;
 
-            .info-group {
+            & .info-group {
                 margin-left: 0;
                 width: 100%;
 

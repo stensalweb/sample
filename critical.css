@@ -32,7 +32,7 @@
             z-index: -10;
         }
 
-        picture {
+        & picture {
             position: absolute;
             top: 0;
             left: 0;
@@ -40,7 +40,7 @@
             width: 100%;
             z-index: -11;
 
-            img {
+            & img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -50,7 +50,7 @@
             }
         }
 
-        .hero-content {
+        & .hero-content {
             width: 96%;
             max-width: 1144/16em;
             margin: auto;
@@ -59,17 +59,17 @@
             text-align: center;
         }
 
-        .hero-content {
+        & .hero-content {
             padding: 0;
         }
 
-        .heroText {
+        & .heroText {
             width: 100%;
             margin: auto;
             max-width: 910/16em;
         }
 
-        h1 {
+        & h1 {
             font-weight: bold;
             font-size:~"min(12vw, 4em)";
             color: var(--bannerText);
@@ -95,7 +95,7 @@
             }
         }
 
-        p {
+        & p {
             line-height: 1.55em;
             margin: auto;
             margin-bottom: 31/18em;
@@ -106,7 +106,7 @@
             opacity: 1;
         }
 
-        .button-solid {
+        & .button-solid {
             margin: auto;
             display: inline-block;
             width: auto;
@@ -123,7 +123,7 @@
         z-index: 1;
         overflow: hidden;
 
-        .hero-content {
+        & .hero-content {
             display: flex;
             justify-content: space-between;
             position: relative;
@@ -143,7 +143,7 @@
 		background-repeat: no-repeat;
         background-attachment: fixed;
 
-        picture {
+        & picture {
             display: none;
         }
     }
@@ -169,7 +169,7 @@
         border-top: 6/16em solid var(--primary);
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
         margin-bottom: 50/16em;
-        .card {
+        & .card {
             display: block;
             width: 100%;
             max-width: 357/16em;
@@ -179,7 +179,7 @@
                 margin-bottom: 0;
             }
 
-            picture {
+            & picture {
                 background: var(--primary);
                 width: 88/16em;
                 height: 88/16em;
@@ -190,12 +190,12 @@
                 margin-bottom: 23/16em;
                 border-radius: 50%;
 
-                img {
+                & img {
                     width: 48/16em;
                     height: 48/16em;
                 }
             }
-            h2 {
+            & h2 {
                 text-align: center;
                 font-size: 32/16em;
                 line-height: 27/20em;
@@ -203,7 +203,7 @@
                 color: #1a1a1a;
                 margin-bottom: 13/20em;
             }
-            p {
+            & p {
                 text-align: center;
                 line-height: 24/18em;
                 width: 100%;
@@ -222,7 +222,7 @@
         align-items: flex-start;
         width: 98%;
 
-        .card {
+        & .card {
             margin: 0;
             max-width: 325/16em;
         }
@@ -234,7 +234,7 @@
     .services {
         padding: 50/16em 80/16em;
 
-        .card {
+        & .card {
             max-width: 357/16em;
         }
     }
@@ -246,11 +246,11 @@
         #services {
             background: var(--medium);
 
-            picture {
+            & picture {
                 background: var(--primaryDark);
             }
 
-            h2 {
+            & h2 {
                 color: #fff;
                 font-weight: bold;
             }
