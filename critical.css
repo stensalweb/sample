@@ -112,7 +112,7 @@
             width: auto;
         }
     }
-    
+
 }
 
 /* Tablet */
@@ -138,9 +138,9 @@
         padding-top: 273/16em;
         padding-bottom: 307/16em;
         background: url("../images/landing-m.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         background-attachment: fixed;
 
         & picture {

@@ -15,15 +15,15 @@
     }
 
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
-    
+
     /* roboto-regular - latin */
     @font-face {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         src: local(''),
-            url('../fonts/roboto-v29-latin-regular.woff2') format('woff2'), 
-            url('../fonts/roboto-v29-latin-regular.woff') format('woff'); 
+        url('../fonts/roboto-v29-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v29-latin-regular.woff') format('woff');
     }
     /* roboto-700 - latin */
     @font-face {
@@ -31,8 +31,8 @@
         font-style: normal;
         font-weight: 700;
         src: local(''),
-            url('../fonts/roboto-v29-latin-700.woff2') format('woff2'), 
-            url('../fonts/roboto-v29-latin-700.woff') format('woff'); 
+        url('../fonts/roboto-v29-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v29-latin-700.woff') format('woff');
     }
     /* roboto-900 - latin */
     @font-face {
@@ -40,10 +40,10 @@
         font-style: normal;
         font-weight: 900;
         src: local(''),
-            url('../fonts/roboto-v29-latin-900.woff2') format('woff2'), 
-            url('../fonts/roboto-v29-latin-900.woff') format('woff');
+        url('../fonts/roboto-v29-latin-900.woff2') format('woff2'),
+        url('../fonts/roboto-v29-latin-900.woff') format('woff');
     }
-    
+
     body, html {
         margin: 0;
         padding: 0;
@@ -62,7 +62,7 @@
     body {
         transition: background-color .3s;
     }
-    
+
     .container {
         position: relative;
         width: 92%;
@@ -73,8 +73,9 @@
         margin: 0;
         color: #1a1a1a;
     }
-    
+
     p, li, a {
+    
         font-size: 18/16em;
         line-height: 27/18em;
         margin: 0;
@@ -89,7 +90,7 @@
             cursor: pointer;
         }
     }
-    
+
     // Buttons
     .button-solid {
         font-size: 14/16em;
@@ -134,7 +135,7 @@
             transition: width .3s;
         }
     }
-    
+
     // HIdden Screen reader skip nav button
     .skip {
         position: absolute;
@@ -510,6 +511,7 @@
 
         // Navbar Menu
         & #navbar-menu {
+        
             & ul {
                 padding: 0;
                 display: flex;
@@ -544,12 +546,12 @@
                             bottom: 2/19em;
                             z-index: -1;
                             left: 0;
-        
+
                             // transition properties
                             width: 0%;
                             transition: width .3s;
                         }
-        
+
                         &:hover {
                             &:before {
                                 width: 100%;
@@ -618,9 +620,9 @@
             top: 0;
             left: 0;
             z-index: -1;
-          }
+        }
 
-          & picture {
+        & picture {
             position: absolute;
             top: 0;
             left: 0;
@@ -660,7 +662,7 @@
             width: 96%;
         }
     }
-    
+
 }
 
 /* Tablet */
@@ -707,7 +709,7 @@
             & .logo {
                 display: inline-block;
                 margin: auto;
-				width: auto;
+                width: auto;
                 height: 50/16em;
                 margin-bottom: 30/16em;
                 text-align: center;
@@ -718,12 +720,12 @@
                     display: block;
                 }
             }
-    
+
             & p {
                 font-size: 16/16em;
                 line-height: 27/14;
                 color: #fff;
-				opacity: .9;
+                opacity: .9;
                 text-align: center;
                 width: 100%;
                 /*width: 307/14em;*/
@@ -764,18 +766,18 @@
                     & li {
                         list-style: none;
                         margin-bottom: 12/18em;
-			color: #fff;
-			font-size: 18/18em;
-			opacity: .9;
-                        
+                        color: #fff;
+                        font-size: 18/18em;
+                        opacity: .9;
+
                         & a {
                             text-decoration: none;
                             color: #fff;
                             line-height: 21/18;
-			    transition: color .3s;
-			    &:hover {
-				color: var(--primary);
-			    }
+                            transition: color .3s;
+                            &:hover {
+                                color: var(--primary);
+                            }
                         }
                     }
                     & h2 {
@@ -783,21 +785,21 @@
                         font-size: 18/16em;
                         line-height: 21/18;
                         margin-bottom: 37/18em;
-			text-transform: uppercase;
-			font-weight: bold;
-			position: relative;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        position: relative;
 
-			&:before {
-				content: '';
-				position: absolute;
-				display: block;
-				height: 2/18em;
-				width: 97/18em;
-				background: #EEBE76;
-				opacity: 1;
-				bottom: -16/18em;
-				left: 0;
-			}
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            height: 2/18em;
+                            width: 97/18em;
+                            background: #EEBE76;
+                            opacity: 1;
+                            bottom: -16/18em;
+                            left: 0;
+                        }
                     }
                 }
             }
@@ -806,7 +808,7 @@
                 display: flex;
                 justify-content: center;
             }
-    
+
             & .button-solid {
                 margin: 0;
                 height: 53/18em;
@@ -815,30 +817,30 @@
             }
         }
 
-		& .credit {
-			color: #fff;
-			width: 96%;
-			margin: auto;
-			text-align: center;
-			margin-top: 100/16em;
-			line-height: 36/16em;
-			font-size: 16/16em;
+        & .credit {
+            color: #fff;
+            width: 96%;
+            margin: auto;
+            text-align: center;
+            margin-top: 100/16em;
+            line-height: 36/16em;
+            font-size: 16/16em;
 
-			& a {
-				color: var(--primary);
-				text-decoration: none;
-				font-size: 16/16em;
+            & a {
+                color: var(--primary);
+                text-decoration: none;
+                font-size: 16/16em;
 
-				&:hover {
-					text-decoration: underline;
-				}
-			}
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
-			& .copyright {
-				display: block;
-				font-size: 16/16em;
-			}
-		}
+            & .copyright {
+                display: block;
+                font-size: 16/16em;
+            }
+        }
     }
 
 }
@@ -866,7 +868,7 @@
 
             & .logo {
                 text-align: left;
-				margin-left: 0;
+                margin-left: 0;
                 height: 70/16em;
             }
 
@@ -927,11 +929,11 @@
             }
         }
 
-	& .credit {
-		& .copyright {
-			display: inline-block;
-		}
-	}
+        & .credit {
+            & .copyright {
+                display: inline-block;
+            }
+        }
     }
 }
 

@@ -400,6 +400,7 @@
                         transition-delay: .5s;
                     }
                     & a {
+                    
                         text-decoration: none;
                         text-transform: uppercase;
                         color: #000;

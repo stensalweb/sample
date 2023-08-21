@@ -80,7 +80,7 @@
             width: 25/16em;
             height: 25/16em;
             pointer-events: none;
-            
+
         }
 
         & .moon {
@@ -88,6 +88,7 @@
             // Transition properties
             transition: transform .3s, opacity .3s, fill .3s;
             fill: #000; // --> change the color of the moon graphic based ont he background being lighter or darker
+
         }
 
         & .sun {
@@ -97,7 +98,7 @@
             opacity: 0;
             transition: transform .3s, opacity .3s;
         }
-        
+
     }
 }
 
